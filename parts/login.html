@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qasja</title>
+    <link rel="icon" type="image/png" href="../img/icon.png">
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
+
+    <style>
+        @charset "utf-8";
+
+        @font-face {
+            font-family: ProductSans-Bold;
+            src: url("../fonts/ProductSans-Bold.ttf");
+        }
+
+        @font-face {
+            font-family: ProductSans-Medium;
+            src: url("../fonts/ProductSans-Medium.ttf");
+        }
+
+        .container {
+            border-radius: 25px;
+            box-shadow: 0px 0px 15px 0px #838383;
+            width: 550px;
+            margin-top: 50px;
+            margin-bottom: 75px;
+            font-family: ProductSans-Medium;
+        }
+
+        #logo img {
+            width: 100%;
+        }
+
+        form {
+            font-size: 1.3em;
+        }
+
+        .form-group input {
+            border: 0;
+            border-bottom: 1px solid rgba(0, 0, 0, .5);
+            border-radius: 0;
+        }
+
+        textarea:hover,
+        input:hover,
+        textarea:active,
+        input:active,
+        textarea:focus,
+        input:focus,
+        button:focus,
+        button:active,
+        button:hover,
+        label:focus,
+        .btn:active,
+        .btn.active {
+            outline: 0px !important;
+            -webkit-appearance: none;
+            box-shadow: none !important;
+        }
+
+        .btn {
+            width: 100%;
+            border-radius: 25px;
+            background-color: #007C92;
+            color: white;
+        }
+
+        .btn:hover {
+            background-color: #0392ac;
+            color: white;
+        }
+
+        @media screen and (max-width: 600px) {
+            .container {
+                width: 450px;
+            }
+        }
+
+        .regjistrohu-ketu {
+            font-size: 18px;
+        }
+
+        .regjistrohu-ketu span {
+            color: #007C92;
+        }
+
+        .regjistrohu-ketu span:hover {
+            color: #0392ac;
+        }
+
+        .regjistrohu-ketu a {
+            text-decoration: none;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="col-12">
+            <div class="text-center p-3" id="logo">
+                <img src="../img/logo.png" class="img-fluid" alt="">
+            </div>
+
+            <form class="p-5">
+                <div class="form-group">
+                    <label for="perdoruesi">Përdoruesi</label>
+                    <input type="text" class="form-control" placeholder="Shkruani përdoruesin" minlength="8"
+                        maxlength="20" id="perdoruesi">
+                </div>
+                <div class="form-group">
+                    <label for="fjalekalimi" class="mt-2">Fjalëkalimi</label>
+                    <input type="password" class="form-control" placeholder="Shkruani fjalëkalimin" minlength="8"
+                        maxlength="30" id="fjalekalimi">
+                </div>
+                <button type="submit" class="btn mt-5">Kyçu</button>
+                <p class="regjistrohu-ketu mt-5 text-center">Regjistrohu <a href="register.html"><span>këtu</span></a>.
+                </p>
+            </form>
+        </div>
+
+    </div>
+
+
+    <script src="bootstrap/js/jquery-3.5.1.min.js"></script>
+    <script src="bootstrap/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konferencat</title>
+    <link rel="icon" type="image/png" href="img/icon.png">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="parts.css">
+    <link rel="stylesheet" href="fontawesome-free-5.15.1-web/css/all.min.css">
+
+</head>
+
+<body>
+
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand ml-2" href="index.html" id="nav-title">3K Med <img class="mr-4" src="img/icon.png"
+                id="nav-icon" alt=""></a>
+
+        <button class="navbar-toggler mr-2" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto ml-3">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html" id="nav-link">Ballina</a>
+                </li>
+
+                <li class="nav-item dropdown" id="dropdown-nav">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Produktet
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#"><i class="fas fa-user-md mr-3"></i> Kirurgjikale</a>
+                        <a class="dropdown-item" href="#"><i class="fas fa-briefcase-medical mr-3"></i> Të punës</a>
+                        <a class="dropdown-item" href="#"><i class="fas fa-skull mr-3"></i> Imazherike</a>
+                        <a class="dropdown-item" href="#"><i class="fas fa-notes-medical mr-3"></i> Monitoruese</a>
+                    </div>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="conferences.html" id="nav-link">Konferencat</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="parts/contact.html" id="nav-link">Kontakti</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-3">
+                <li class="nav-item mr-2">
+                    <a class="nav-link" href="parts/register.html" id="nav-link">Regjistrohu</a>
+                </li>
+                <a href="parts/login.html"><button class="btn btn-outline-secondary my-2 my-sm-0 mr-2"
+                        id="kycu">Kyçu</button></a>
+            </ul>
+        </div>
+    </nav>
+
+
+    <div class="jumbotron jumbotron-fluid d-flex align-items-center text-center mt-4">
+        <div class="container">
+            <h1>3K Konferencat</h1>
+            <p class="mt-5">Pas një viti si 2020, të gjithë ne po kërkojmë gjëra më të mëdha dhe më të mira në 2021.
+                Pavarësisht se çfarë shpresoni të arrini në vitin e ri, ne kemi ngjarje që mund t'ju ndihmojnë të
+                praktikoni llojin e vetë-kujdesit dhe vetë-përmirësimit që të gjithë mund të përdorim tani.
+                Regjistrohuni për një nga këto ngjarje virtuale dhe filloni udhëtimin tuaj për të
+                bërë më të mirë vitin e ri.</p>
+            <p class="mt-4" id="cover-hashtag">#Konferencat21</p>
+        </div>
+    </div>
+
+
+
+    <div class="container">
+
+        <!-- This month conferences -->
+        <div class="row" id="this-month-row">
+            <div class="col-12">
+                <h1 class="mb-4" id="this-month-title">Këtë muaj
+                    <a href="#"><i class="this-month fas fa-arrow-circle-right ml-3 mt-3"
+                            title="Konferencat e këtij muaji"></i></a>
+                </h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="card mt-4" data-filter="prespektiva mjekesore" data-search="prespektiva mjekesore">
+                    <img src="img/conf-pics/prespektiva-mjekesore.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p>Sht | 6 Shkurt, 2021 | 19:00</p>
+                        <h5>Prespektiva mjekësore</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="card mt-4">
+                    <img src="img/conf-pics/Kërkimi farmaceutik dhe zhvillimi i ilaçeve.jpg" class="card-img-top"
+                        alt="...">
+                    <div class="card-body">
+                        <p>Hën | 8 Shkurt, 2021 | 13:30</p>
+                        <h5>Kërkimi farmaceutik dhe zhvillimi i ilaçeve</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="card mt-4">
+                    <img src="img/conf-pics/Neuroshkenca dhe çrregullimet e trurit.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p>Enj | 11 Shkurt, 2021 | 15:00</p>
+                        <h5>Neuroshkenca dhe çrregullimet e trurit</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="card mt-4">
+                    <img src="img/conf-pics/Plastika estetike dhe rindërtuese.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p>Pre | 12 Shkurt, 2021 | 14:15</p>
+                        <h5>Plastika estetike dhe rindërtuese</h5>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- Search -->
+        <div class="row" id="kerko-row">
+            <div class="col-12 text-center">
+                <div>
+                    <input type="text" id="kerko" placeholder="Kërko...">
+
+                    <button type="button" class="filter-btn ml-3" data-toggle="modal" data-target="#filter-icon">
+                        <i class="fas fa-filter"></i>
+                    </button>
+
+                    <div class="modal fade" id="filter-icon" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Preferencat</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+
+                                <div class="modal-body">
+                                    <form>
+                                        <div class="form-group">
+                                            <label for="muaji">Muaji</label>
+                                            <select class="form-control" id="muaji">
+                                                <option>Janar</option>
+                                                <option>Shkurt</option>
+                                                <option>Mars</option>
+                                                <option>Prill</option>
+                                                <option>Maj</option>
+                                                <option>Qershor</option>
+                                                <option>Korrik</option>
+                                                <option>Gusht</option>
+                                                <option>Shtator</option>
+                                                <option>Tetor</option>
+                                                <option>Nentor</option>
+                                                <option>Dhjetor</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="dita">Dita</label>
+                                            <select class="form-control" id="dita">
+                                                <option>01</option>
+                                                <option>02</option>
+                                                <option>03</option>
+                                                <option>04</option>
+                                                <option>05</option>
+                                                <option>06</option>
+                                                <option>07</option>
+                                                <option>08</option>
+                                                <option>09</option>
+                                                <option>10</option>
+                                                <option>11</option>
+                                                <option>12</option>
+                                                <option>13</option>
+                                                <option>14</option>
+                                                <option>15</option>
+                                                <option>16</option>
+                                                <option>17</option>
+                                                <option>18</option>
+                                                <option>19</option>
+                                                <option>20</option>
+                                                <option>21</option>
+                                                <option>22</option>
+                                                <option>23</option>
+                                                <option>24</option>
+                                                <option>25</option>
+                                                <option>26</option>
+                                                <option>27</option>
+                                                <option>28</option>
+                                                <option>29</option>
+                                                <option>30</option>
+                                                <option>31</option>
+                                            </select>
+                                        </div>
+
+                                </div>
+
+                                <div class="modal-footer text-center">
+                                    <div class="col-12" id="modal-ruaj">
+                                        <button type="button" class="ruaj-btn btn">Ruaj</button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <!-- <div class="row" id="other-conferences-row">
+            <div class="col-12">
+                <h1 class="mb-4" id="other-conferences-title">Konferenca të tjera
+                    <a href="#"><i class="other-conferences fas fa-arrow-circle-right ml-3 mt-3"
+                            title="Konferenca të tjera"></i></a>
+                </h1>
+            </div>
+        </div> -->
+
+        <!-- Other conferences -->
+        <div class="row">
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="card mt-4">
+                    <img src="img/conf-pics/Plakja dhe përtëritja.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p>Mër | 17 Shkurt, 2021 | 15:20</p>
+                        <h5>Plakja dhe përtëritja</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="card mt-4">
+                    <img src="img/conf-pics/Endokrinologjia, diabeti dhe metabolizmi.jpg" class="card-img-top"
+                        alt="...">
+                    <div class="card-body">
+                        <p>Mër | 17 Shkurt, 2021 | 17:30</p>
+                        <h5>Endokrinologjia, diabeti dhe metabolizmi</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="card mt-4">
+                    <img src="img/conf-pics/Sëmundjet infektive.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p>Hën | 22 Shkurt, 2021 | 18:00</p>
+                        <h5>Sëmundjet infektive</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="card mt-4">
+                    <img src="img/conf-pics/Menaxhimi i stresit.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p>Sht | 27 Shkurt, 2021 | 18:50</p>
+                        <h5>Menaxhimi i stresit</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="card mt-4">
+                    <img src="img/conf-pics/Plakja dhe përtëritja.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p>Mër | 17 Shkurt, 2021 | 15:20</p>
+                        <h5>Plakja dhe përtëritja</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="card mt-4">
+                    <img src="img/conf-pics/Endokrinologjia, diabeti dhe metabolizmi.jpg" class="card-img-top"
+                        alt="...">
+                    <div class="card-body">
+                        <p>Mër | 17 Shkurt, 2021 | 17:30</p>
+                        <h5>Endokrinologjia, diabeti dhe metabolizmi</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="card mt-4">
+                    <img src="img/conf-pics/Sëmundjet infektive.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p>Hën | 22 Shkurt, 2021 | 18:00</p>
+                        <h5>Sëmundjet infektive</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="card mt-4">
+                    <img src="img/conf-pics/Menaxhimi i stresit.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p>Sht | 27 Shkurt, 2021 | 18:50</p>
+                        <h5>Menaxhimi i stresit</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Organizers -->
+        <div class="row" id="organizers-row">
+            <div class="col-12">
+                <h1 id="organizers-title">Organizatorët</h1>
+                <p class="text-muted mt-3">Ndiqni organizatorët dhe njoftohuni kur krijojnë konferenca të reja.</p>
+            </div>
+        </div>
+
+        <div class="wrapper">
+
+            <ul id="organizers">
+                <li class="follow-item mx-2">
+                    <a href="#">
+                        <div class="follow-pic">
+                            <img src="img/conf-pics/organizers/1.jpg" alt="">
+                        </div>
+                        <div class="follow-name">
+                            Filan Fisteku
+                        </div>
+                    </a>
+                    <div class="follow-button">
+                        <button class="follow-btn btn">Follow</button>
+                    </div>
+                </li>
+
+                <li class="follow-item mx-2">
+                    <a href="#">
+                        <div class="follow-pic">
+                            <img src="img/conf-pics/organizers/2.jpg" alt="">
+                        </div>
+                        <div class="follow-name">
+                            Filan Fisteku
+                        </div>
+                    </a>
+                    <div class="follow-button">
+                        <button class="follow-btn btn">Follow</button>
+                    </div>
+                </li>
+
+                <li class="follow-item mx-2">
+                    <a href="#">
+                        <div class="follow-pic">
+                            <img src="img/conf-pics/organizers/3.jpg" alt="">
+                        </div>
+                        <div class="follow-name">
+                            Filan Fisteku
+                        </div>
+                    </a>
+                    <div class="follow-button">
+                        <button class="follow-btn btn">Follow</button>
+                    </div>
+                </li>
+
+                <li class="follow-item mx-2">
+                    <a href="#">
+                        <div class="follow-pic">
+                            <img src="img/conf-pics/organizers/4.jpg" alt="">
+                        </div>
+                        <div class="follow-name">
+                            Filan Fisteku
+                        </div>
+                    </a>
+                    <div class="follow-button">
+                        <button class="follow-btn btn">Follow</button>
+                    </div>
+                </li>
+
+                <li class="follow-item mx-2">
+                    <a href="#">
+                        <div class="follow-pic">
+                            <img src="img/conf-pics/organizers/5.jpg" alt="">
+                        </div>
+                        <div class="follow-name">
+                            Filan Fisteku
+                        </div>
+                    </a>
+                    <div class="follow-button">
+                        <button class="follow-btn btn">Follow</button>
+                    </div>
+                </li>
+
+                <li class="follow-item mx-2">
+                    <a href="#">
+                        <div class="follow-pic">
+                            <img src="img/conf-pics/organizers/6.jpg" alt="">
+                        </div>
+                        <div class="follow-name">
+                            Filan Fisteku
+                        </div>
+                    </a>
+                    <div class="follow-button">
+                        <button class="follow-btn btn">Follow</button>
+                    </div>
+                </li>
+
+                <li class="follow-item mx-2">
+                    <a href="#">
+                        <div class="follow-pic">
+                            <img src="img/conf-pics/organizers/7.jpg" alt="">
+                        </div>
+                        <div class="follow-name">
+                            Filan Fisteku
+                        </div>
+                    </a>
+                    <div class="follow-button">
+                        <button class="follow-btn btn">Follow</button>
+                    </div>
+                </li>
+
+                <li class="follow-item mx-2">
+                    <a href="#">
+                        <div class="follow-pic">
+                            <img src="img/conf-pics/organizers/8.jpg" alt="">
+                        </div>
+                        <div class="follow-name">
+                            Filan Fisteku
+                        </div>
+                    </a>
+                    <div class="follow-button">
+                        <button class="follow-btn btn">Follow</button>
+                    </div>
+                </li>
+
+                <div class="follow-more ml-5">
+                    <a href="#"><i class="fas fa-arrow-circle-right" title="Organizatorët"></i></a>
+                </div>
+
+            </ul>
+
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="container my-5">
+            <h3 style="font-family: ProductSans-Medium;">3K Med</h3>
+            <div class="row mt-4" id="col-contents">
+                <div class="col-md-6 col-lg-3 mt-2">
+                    <a href="index.html">
+                        <h5>Ballina</h5>
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-3 mt-2">
+                    <a href="#">
+                        <h5>Produktet</h5>
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-3 mt-2">
+                    <a href="conferences.html">
+                        <h5>Konferencat</h5>
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-3 mt-2">
+                    <a href="parts/contact.html">
+                        <h5>Kontakti</h5>
+                    </a>
+                </div>
+            </div>
+
+            <div class="social-links mt-4">
+                <a href="#" title="Facebook"><i class="fab fa-facebook-f mt-1"></i></a>
+                <a href="#" title="Instagram"><i class="fab fa-instagram mt-1"></i></a>
+                <a href="#" title="Twitter"><i class="fab fa-twitter mt-1"></i></a>
+                <a href="#" title="Email"><i class="far fa-envelope mt-1"></i></a>
+            </div>
+            <div id="footer-copyright">
+                3K Med &copy; Copyright 2021
+            </div>
+
+        </div>
+    </footer>
+
+
+
+    <script src="bootstrap/js/jquery-3.5.1.min.js"></script>
+    <script src="bootstrap/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>

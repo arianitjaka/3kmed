@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3K Med</title>
+    <link rel="icon" type="image/png" href="img/icon.png">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fontawesome-free-5.15.1-web/css/all.min.css">
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.css' rel='stylesheet'>
+
+
+</head>
+
+<body>
+
+
+    <!-- Alert -->
+    <div id="top-alert" class="alert alert-dismissible fade show">
+        <h4 class="mt-2"><img src="img/alert.png" alt=""><strong>COVID-19!</strong></h4>
+        <p>Informacionet më të reja rreth virusit.</p>
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand ml-2" href="index.html" id="nav-title">3K Med <img class="mr-4" src="img/icon.png"
+                id="nav-icon" alt=""></a>
+
+        <button class="navbar-toggler mr-2" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto ml-3">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html" id="nav-link">Ballina</a>
+                </li>
+
+                <li class="nav-item dropdown" id="dropdown-nav">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Produktet
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#"><i class="fas fa-user-md mr-3"></i> Kirurgjikale</a>
+                        <a class="dropdown-item" href="#"><i class="fas fa-briefcase-medical mr-3"></i> Të punës</a>
+                        <a class="dropdown-item" href="#"><i class="fas fa-skull mr-3"></i> Imazherike</a>
+                        <a class="dropdown-item" href="#"><i class="fas fa-notes-medical mr-3"></i> Monitoruese</a>
+                    </div>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="conferences.html" id="nav-link">Konferencat</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="parts/contact.html" id="nav-link">Kontakti</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-3">
+                <li class="nav-item mr-2">
+                    <a class="nav-link" href="parts/register.html" id="nav-link">Regjistrohu</a>
+                </li>
+                <a href="parts/login.html"><button class="btn btn-outline-secondary my-2 my-sm-0 mr-2"
+                        id="kycu">Kyçu</button></a>
+            </ul>
+        </div>
+    </nav>
+
+
+    <!-- Cover Photo -->
+    <div class="jumbotron jumbotron-fluid mt-4">
+        <div class="container">
+            <h2>Kujdesi më i mirë, <br> mjekët më të mirë</h2>
+            <p class="mt-5">Duke sjellë të ardhmen e kujdesit shëndetësor, <br> ne ofrojmë zgjidhje të lartë për
+                shëndetin tuaj.</p>
+        </div>
+    </div>
+
+
+    <!-- COVID Info -->
+    <div class="container">
+
+        <div id="covid-background">
+
+            <div class="row">
+                <div class="col-12">
+                    <h1 id="covid-title">Kujdes nga <span>COVID-19</span>!</h1>
+                    <p class="text-muted">Mbroj veten dhe të tjerët duke i reskpektuar këshillat nga Organizata Botërore
+                        e
+                        Shëndetësisë. <a href="https://www.who.int/" target="_blank"><span id="who">Më shumë</span></a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12 mt-5">
+                    <div class="box">
+                        <img src="img/mask.png" alt="">
+                        <h1>Vendos maskën</h1>
+                    </div>
+                    <div class="box">
+                        <img src="img/pastro-duart.png" alt="">
+                        <h1>Pastro duart</h1>
+                    </div>
+                    <div class="box">
+                        <img src="img/distance.png" alt="">
+                        <h1>Mbaj distancën</h1>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- COVID Table -->
+            <div class="row" id="covid-table">
+                <div class="col-12">
+                    <h1 id="covid-table-title">Statistikat</h1>
+                    <p class="text-muted">Të dhënat e fundit në lidhje me COVID-19.</p>
+                </div>
+            </div>
+
+            <p id="table-button">
+                <button class="btn btn-transparent" type="button" data-toggle="collapse" data-target="#vendi"
+                    aria-expanded="false" aria-controls="collapseExample">
+                    Vendi
+                </button>
+                <button class="btn btn-transparent" type="button" data-toggle="collapse" data-target="#rajoni"
+                    aria-expanded="false" aria-controls="collapseExample">
+                    Rajoni
+                </button>
+                <button class="btn btn-transparent" type="button" data-toggle="collapse" data-target="#bota"
+                    aria-expanded="false" aria-controls="collapseExample">
+                    Bota
+                </button>
+            </p>
+            <div class="collapse.show" id="vendi">
+                <div class="card card-body">
+                    <table id="tabela">
+                        <thead>
+                            <tr>
+                                <th>Shteti</th>
+                                <th>Të shëruar</th>
+                                <th>Të vdekur</th>
+                                <th>Raste aktive</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td><img src="img/flags/kosova.png" title="Kosova" alt=""></td>
+                                <td>30,157</td>
+                                <td>1,096</td>
+                                <td>42,762</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="collapse" id="rajoni">
+                <div class="card card-body">
+                    <table id="tabela">
+
+                        <thead>
+                            <tr>
+                                <th>Shteti</th>
+                                <th>Të shëruar</th>
+                                <th>Të vdekur</th>
+                                <th>Raste aktive</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td><img src="img/flags/shqiperia.png" title="Shqipëria" alt=""></td>
+                                <td>22,180</td>
+                                <td>905</td>
+                                <td>42,988</td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/flags/bih.png" title="Bosnja & Hercegovina" alt=""></td>
+                                <td>60,210</td>
+                                <td>2,922</td>
+                                <td>93,768</td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/flags/bulgaria.png" title="Bulgaria" alt=""></td>
+                                <td>65,616</td>
+                                <td>4,797</td>
+                                <td>161,421</td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/flags/kroacia.png" title="Kroacia" alt=""></td>
+                                <td>130,869</td>
+                                <td>2,174</td>
+                                <td>150,353</td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/flags/kosova.png" title="Kosova" alt=""></td>
+                                <td>30,157</td>
+                                <td>1,096</td>
+                                <td>42,762</td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/flags/malizi.png" title="Mali i Zi" alt=""></td>
+                                <td>27,651</td>
+                                <td>530</td>
+                                <td>37,981</td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/flags/maqedonia.png" title="Maqedonia e Veriut" alt=""></td>
+                                <td>44,705</td>
+                                <td>1,924</td>
+                                <td>67,968</td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/flags/romania.png" title="Romania" alt=""></td>
+                                <td>416,797</td>
+                                <td>12,320</td>
+                                <td>513,576</td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/flags/serbia.png" title="Serbia" alt=""></td>
+                                <td>31,536</td>
+                                <td>1,949</td>
+                                <td>219,652</td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/flags/slovenia.png" title="Slovenia" alt=""></td>
+                                <td>65,240</td>
+                                <td>1,258</td>
+                                <td>85,805</td>
+                            </tr>
+                        </tbody>
+
+                    </table>
+                </div>
+            </div>
+
+            <div class="collapse" id="bota">
+                <div class="card card-body">
+                    <table id="tabela">
+
+                        <thead>
+                            <tr>
+                                <th>Shteti</th>
+                                <th>Të shëruar</th>
+                                <th>Të vdekur</th>
+                                <th>Raste aktive</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td><img src="img/flags/shba.png" title="SHBA" alt=""></td>
+                                <td>11,243,522</td>
+                                <td>337,927</td>
+                                <td>7,614,225</td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/flags/kina.png" title="Kina" alt=""></td>
+                                <td>60,210</td>
+                                <td>337,927</td>
+                                <td>93,768</td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/flags/rusia.png" title="Rusia" alt=""></td>
+                                <td>2,398,254</td>
+                                <td>53,659</td>
+                                <td>540,793</td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/flags/uk.png" title="Britania e Madhe" alt=""></td>
+                                <td>N/A</td>
+                                <td>70,195</td>
+                                <td>N/A</td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/flags/gjermania.png" title="Gjermania" alt=""></td>
+                                <td>1,206,200</td>
+                                <td>29,940</td>
+                                <td>395,201</td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/flags/india.png" title="India" alt=""></td>
+                                <td>9,739,332</td>
+                                <td>147,379</td>
+                                <td>283,093</td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/flags/brazil.png" title="Brazil" alt=""></td>
+                                <td>6,449,822</td>
+                                <td>190,145</td>
+                                <td>791,013</td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/flags/japonia.png" title="Japonia" alt=""></td>
+                                <td>177,793</td>
+                                <td>3,105</td>
+                                <td>29,082</td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/flags/australia.png" title="Australia" alt=""></td>
+                                <td>25,722</td>
+                                <td>908</td>
+                                <td>1,643</td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/flags/meksika.png" title="Meksika" alt=""></td>
+                                <td>1,015,256</td>
+                                <td>121,172</td>
+                                <td>226,136</td>
+                            </tr>
+                        </tbody>
+
+                    </table>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Conferences -->
+    <div class="conference-contents">
+        <div class="container">
+            <h1>Konferencat mjekësore</h1>
+            <p>Me mbi 50 konferenca në vit, 3K Med ofron një rrugë të drejtpërdrejtë për
+                studiuesit global duke prekur tema të ndryshme rreth mjekësisë.</p>
+            <p id="conference-hashtag">#Konferecat21</p>
+            <a href="conferences.html"><i class="fas fa-arrow-circle-right" title="Konferencat"></i></a>
+        </div>
+    </div>
+
+
+    <!-- Products & Equipments -->
+    <div class="container">
+        <div class="row" id="product-header">
+            <div class="col-12">
+                <h1 id="product-title">Produktet dhe pajisjet</h1>
+                <p class="text-muted">Ofrojmë produkte dhe pajisje të ndryshme.</p>
+            </div>
+        </div>
+
+        <div class="row" id="maki">
+            <div class="col-md-12 col-lg-6">
+                <div class="card mt-5" id="produkte-kirurgjikale">
+                    <div class="card-body mt-5">
+                        <h1 class="card-title ml-3">Kirurgjikale</h1>
+                        <a href="#"><i class="fas fa-arrow-circle-right ml-5" title="Produkte kirurgjikale"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 col-lg-6">
+                <div class="card mt-5" id="produkte-tepunes">
+                    <div class="card-body mt-5">
+                        <h1 class="card-title ml-3">Të punës</h1>
+                        <a href="#"><i class="fas fa-arrow-circle-right ml-5" title="Produkte të punës"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12 col-lg-6">
+                <div class="card mt-5" id="produkte-imazherike">
+                    <div class="card-body mt-5">
+                        <h1 class="card-title ml-3">Imazherike</h1>
+                        <a href="#"><i class="fas fa-arrow-circle-right ml-5" title="Produktet imazherike"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 col-lg-6">
+                <div class="card mt-5" id="produkte-monitoruese">
+                    <div class="card-body mt-5">
+                        <h1 class="card-title ml-3">Monitoruese</h1>
+                        <a href="#"><i class="fas fa-arrow-circle-right ml-5" title="Produktet monitoruese"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- 3K App -->
+    <div class="device-app">
+        <div class="container" id="container-app">
+            <h1>3K App</h1>
+            <p>Shkarko aplikacionin përmes pajisjes tuaj Android ose iOS.</p>
+            <a href="#"><img src="img/playstore.png" class="img-fluid" alt=""></a>
+            <a href="#"><img src="img/appstore.png" class="img-fluid" alt=""></a>
+
+        </div>
+    </div>
+
+
+    <div class="container">
+
+        <!-- Contact -->
+        <div class="row mb-2" id="contact-row">
+            <div class="col-12">
+                <h1 id="map-title">Na kontaktoni <a href="parts/contact.html"><i
+                            class="fas fa-arrow-circle-right ml-3 mt-3" title="Kontakti"></i></a> </h1>
+            </div>
+        </div>
+
+        <div class="row d-flex align-items-center">
+            <div class="col-sm-12 col-md-5 my-5" id="contact-row">
+
+                <div class="row mr-5" id="clock-row">
+                    <div class="col-md-2 offset-2" id="row-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div class="col-md-8 text-center" id="row-text">
+                        <h2>Orari</h2>
+                        <p class="text-muted">Hënë - Premte <br> 08:00 - 18:00</p>
+                    </div>
+                </div>
+
+                <div class="row mr-5 mt-5" id="phone-row">
+                    <div class="col-md-2 offset-2" id="row-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <div class="col-md-8 text-center" id="row-text">
+                        <h2>Telefoni</h2>
+                        <p class="text-muted">+383 (0) 44 / 123 - 456 <br> +383 (0) 49 / 123 - 456 </p>
+                    </div>
+                </div>
+
+                <div class="row mr-5 mt-5" id="email-row">
+                    <div class="col-md-2 offset-2" id="row-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="col-md-8 text-center" id="row-text">
+                        <h2>Email</h2>
+                        <p class="text-muted">info@3kmed.com</p>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="col-sm-12 col-md-7 my-5" id='map'></div>
+            <script src="map.js"></script>
+        </div>
+
+
+        <!-- Subscribe -->
+        <div class="row" id="abonohu-title">
+            <div class="col-12">
+                <h1 id="abonohu-pretitle">Abonohu tani!</h1>
+            </div>
+        </div>
+        <div class="row" id="abonohu-content">
+            <div class="col-sm-12 col-md-7 mt-5" id="mail-text">
+                <h1>Merri njoftimet i pari</h1>
+                <div id="abonohu-email" class="mt-4">
+                    <input type="email" placeholder="Shkruani emailin tuaj..." minlength="20" maxlength="50">
+                </div>
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <button type="submit" class="btn-abonohu btn mt-5">Abonohu</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-5 mt-4" id="mail-pic">
+                <img src="img/mailbox3.jpg" alt="">
+            </div>
+        </div>
+
+    </div>
+    </div>
+
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="container my-5">
+            <h3 style="font-family: ProductSans-Medium;">3K Med</h3>
+            <div class="row mt-4" id="col-contents">
+                <div class="col-md-6 col-lg-3 mt-2">
+                    <a href="index.html">
+                        <h5>Ballina</h5>
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-3 mt-2">
+                    <a href="#">
+                        <h5>Produktet</h5>
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-3 mt-2">
+                    <a href="conferences.html">
+                        <h5>Konferencat</h5>
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-3 mt-2">
+                    <a href="parts/contact.html">
+                        <h5>Kontakti</h5>
+                    </a>
+                </div>
+            </div>
+
+            <div class="social-links mt-4">
+                <a href="#" title="Facebook"><i class="fab fa-facebook-f mt-1"></i></a>
+                <a href="#" title="Instagram"><i class="fab fa-instagram mt-1"></i></a>
+                <a href="#" title="Twitter"><i class="fab fa-twitter mt-1"></i></a>
+                <a href="#" title="Email"><i class="far fa-envelope mt-1"></i></a>
+            </div>
+            <div id="footer-copyright">
+                3K Med &copy; Copyright 2021
+            </div>
+
+        </div>
+    </footer>
+
+
+
+
+    <script src="bootstrap/js/jquery-3.5.1.min.js"></script>
+    <script src="bootstrap/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>

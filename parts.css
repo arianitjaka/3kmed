@@ -1,0 +1,338 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: ProductSans-Bold;
+    src: url("fonts/ProductSans-Bold.ttf");
+}
+@font-face {
+    font-family: ProductSans-Medium;
+    src: url("fonts/ProductSans-Medium.ttf");
+}
+
+
+/* Navbar */
+#nav-title {
+    color: #007C92;
+    font-size: 3.5em;
+    font-family: ProductSans-Bold;
+}
+
+#nav-icon {
+    width: 65px;
+    margin-bottom: 12px;
+}
+
+.nav-link {
+    font-family: ProductSans-Medium;
+    font-size: 1.2em;
+}
+#nav-link:hover {
+    color: #007C92;
+}
+#dropdown-nav a:hover {
+    color: #007C92;
+}
+#kycu {
+    font-family: ProductSans-Medium; 
+    font-size: 1.2em;
+}
+#kycu:hover {
+    background-color: #007C92;
+}
+.dropdown-menu {
+    font-family: ProductSans-Medium;
+    font-size: 1.2em;
+}
+
+
+/* Cover Photo */
+.jumbotron {
+    font-family: ProductSans-Bold;
+    background: url(img/conf-pics/cover-pic.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    color: white;
+    border-radius: 0px;
+}
+.jumbotron h1 {
+    font-size: 100px;
+}
+.jumbotron p {
+    font-family: ProductSans-Medium;
+}
+#cover-hashtag {
+    font-family: ProductSans-Bold;
+    font-size: 1.5em;
+}
+
+@media screen and (max-width: 600px) {
+    .jumbotron h1 {
+        font-size: 75px;
+    }
+}
+
+
+
+/* Conferences */
+.card {
+    border: 0;
+    /* border-radius: 25px;   */
+}
+.card:hover {
+    box-shadow: 0px 0px 10px 0px #838383;
+}
+.card p {
+    font-family: ProductSans-Bold;
+    color: #007C92;
+}
+.card h5 {
+    font-family: ProductSans-Medium;
+}
+.card-body {
+    height: 192px;
+}
+
+/* Search */
+.filter-btn {
+    height: 40px;
+    width: 40px;
+    border: 0;
+    background-color: white;
+}
+#kerko-row i {
+    font-size: 1.5em;
+    color: #007C92;
+    margin-top: 75px;
+}
+#kerko-row i:hover {
+    color: #0392ac;
+}
+#kerko {
+    font-family: ProductSans-Medium;
+    font-size: 1.3em;
+    width: 50%;
+    /* height: 40px; */
+    padding: 5px;
+    margin-bottom: 25px;
+    border: 0;
+    border-bottom: 2px solid #007C92;
+    border-radius: 0;
+}
+
+/* Modal */
+.modal {
+    font-family: ProductSans-Medium;
+    text-align: left;
+}
+.modal-title {
+    font-size: 1.8em;
+}
+.form-group label {
+    font-size: 1.2em;
+}
+#modal-ruaj > .ruaj-btn {
+    background-color: #007C92;
+    color: white;
+    width: 40%;
+    border-radius: 25px;
+}
+#modal-ruaj > .ruaj-btn:hover {
+    background-color:#0392ac;
+    
+}
+
+textarea:hover,
+        input:hover,
+        textarea:active,
+        input:active,
+        textarea:focus,
+        input:focus,
+        button:focus,
+        button:active,
+        button:hover,
+        label:focus,
+        .btn:active,
+        .btn.active {
+            outline: 0px !important;
+            -webkit-appearance: none;
+            box-shadow: none !important;
+        }
+
+
+
+/* This month */
+#this-month-row {
+    margin-top: 75px;
+}
+#this-month-title {
+    font-family: ProductSans-Bold;
+    font-size: 4em;
+}
+.this-month {
+    color: #007C92;
+}
+.this-month:hover {
+    color: #0392ac;
+}
+#other-conferences-row {
+    margin-top: 50px;
+}
+#other-conferences-title {
+    font-family: ProductSans-Bold;
+    font-size: 4em;
+}
+.other-conferences {
+    color: #007C92;
+}
+.other-conferences:hover {
+    color: #0392ac;
+}
+
+
+/* Organizers */
+.wrapper {
+    font-family: ProductSans-Medium;
+    overflow: auto;
+    margin-top: 50px;
+}
+#organizers-row {
+    margin-top: 100px;
+}
+#organizers-title {
+    font-family: ProductSans-Bold;
+    font-size: 4em;
+}
+#organizers-row p {
+    font-family: ProductSans-Medium;
+}
+#organizers {
+    padding: 15px;
+    width: 2350px;
+    height: 335px;
+    overflow: auto;
+}
+#organizers li {
+    display: inline-block;
+    padding: 10px;
+    width: 250px;
+    height: 300px;
+    text-align: center;
+    box-shadow: 0px 0px 8px 0px #838383;
+}
+#organizers li:hover {
+    box-shadow: 0px 0px 15px 0px #838383;
+}
+.follow-item {
+    background-color: white;
+    color: black;
+    border-radius: 25px;
+}
+.follow-item img {
+    width: 100px;
+    border-radius: 50%;
+}
+.follow-item a {
+    color: black;
+    text-decoration: none;
+}
+.follow-pic {
+    margin-top: 15px;
+}
+.follow-name {
+    font-family: ProductSans-Bold;
+    font-size: 1.1em;
+    margin-top: 25px;
+}
+.follow-btn {
+    border: 3px solid #007C92;
+    border-radius: 10px;
+    color: #007C92;
+    margin-top: 40px;
+}
+.follow-btn:hover {
+    background-color: #007C92;
+    color: white;
+}
+.follow-more {
+    font-size: 6em;
+    display: inline;
+    margin-bottom: 50px;
+    position: relative;
+    top: -40px;
+}
+.follow-more i {
+    color: #007C92;
+}
+.follow-more i:hover {
+    color: #0392ac;
+}
+
+
+/* Footer */
+#footer {
+    font-family: ProductSans-Medium;
+    background: url(img/footer-pic.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    padding: 30px 0;
+    margin-top: 150px;
+} 
+#footer h3 {
+    font-family: ProductSans-Medium;
+    font-size: 50px;
+    font-weight: 700;
+    color: #fff;
+    position: relative;
+    font-family: "Poppins", sans-serif;
+    padding: 0;
+    margin: 0 0 15px 0;
+} 
+#footer p {
+    font-size: 20px;
+    padding: 0;
+    margin: 0 0 40px 0;
+}
+#footer .social-links {
+    margin: 0 0 40px 0;
+} 
+#footer .social-links a {
+    font-size: 15px;
+    display: inline-block;
+    background: #007C92;
+    color: #fff;
+    padding: 8px 0;
+    margin-right: 5px;
+    border-radius: 50%;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    transition: 0.3s;
+}
+#col-contents a {
+    color: white;
+}
+#col-contents a:hover {
+    color: rgb(209, 209, 209);
+    text-decoration: none;
+}
+#col-contents h5 {
+    font-size: 25px;
+}
+.social-links i {
+    font-size: 25px;
+}
+#footer .social-links a:hover {
+    background: #0392ac;
+    color: #fff;
+    text-decoration: none;
+}  
+#footer .copyright {
+    margin: 0 0 5px 0;
+}
+#footer-copyright {
+    font-size: 1.1em;
+}

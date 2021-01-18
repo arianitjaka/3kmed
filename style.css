@@ -1,0 +1,519 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: ProductSans-Bold;
+    src: url("fonts/ProductSans-Bold.ttf");
+}
+@font-face {
+    font-family: ProductSans-Medium;
+    src: url("fonts/ProductSans-Medium.ttf");
+}
+
+#container2 {
+    width: 1400px;
+    margin: auto;
+    margin-top: 100px;
+    border: 1px solid red;
+}
+
+
+/* Alert */
+#top-alert {
+    font-family: ProductSans-Medium;
+    color: white;
+    text-align: center;
+    background-color: #007C92;
+    border-radius: 0;
+}
+#top-alert img {
+    width: 30px;
+    margin-top: -5px;
+    margin-right: 10px;
+}
+#top-alert button:hover {
+    color: white;
+}
+
+
+/* Navbar */
+#nav-title {
+    color: #007C92;
+    font-size: 3.5em;
+    font-family: ProductSans-Bold;
+}
+
+#nav-icon {
+    width: 65px;
+    margin-bottom: 12px;
+}
+
+.nav-link {
+    font-family: ProductSans-Medium;
+    font-size: 1.2em;
+}
+#nav-link:hover {
+    color: #007C92;
+}
+#dropdown-nav a:hover {
+    color: #007C92;
+}
+#kycu {
+    font-family: ProductSans-Medium; 
+    font-size: 1.2em;
+}
+#kycu:hover {
+    background-color: #007C92;
+}
+.dropdown-menu {
+    font-family: ProductSans-Medium;
+    font-size: 1.2em;
+}
+
+
+/* Cover Photo */
+.jumbotron {
+    font-family: ProductSans-Bold;
+    background: url(img/ballina-coverpic.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    color: white;
+    /* padding: 0; */
+    border-radius: 0px;
+}
+.jumbotron h2 {
+    font-size: 60px;
+    margin-top: 50px;
+}
+@media screen and (max-width: 600px) {
+    .jumbotron h2 {
+        font-size: 75px;
+        margin-top: 10px;
+    }
+}
+@media screen and (max-width: 765px) {
+    .jumbotron h1 {
+        font-size: 75px;
+        margin-top: -5px;
+    }
+}
+@media screen and (max-width: 992px) {
+    .jumbotron h1 {
+        font-size: 86px;
+        margin-top: -5px;
+    }
+}
+
+
+/* COVID Background */
+#covid-background {
+    background: url(img/covid-background.jpg);
+    margin-top: 100px;
+}
+
+/* COVID Info */
+#covid-title {
+    font-family: ProductSans-Bold;
+    font-size: 4em;
+    margin-top: 50px;
+}
+#covid-title span {
+    color: #007C92;
+}
+.text-muted {
+    font-family: ProductSans-Medium;
+}
+#who {
+    color: #007C92;
+}
+.box {
+    /* border: 1px solid blue; */
+    width: 32.5%;
+    text-align: center;
+    display: inline-block;
+}
+.box img {
+    width: 50%;
+}
+.box h1 {
+    font-family: ProductSans-Medium;
+    font-size: 25px;
+    margin-top: 15px;
+}
+
+
+/* COVID Table */
+#covid-table {
+    margin-top: 100px;
+}
+#covid-table-title {
+    font-family: ProductSans-Bold;
+    font-size: 4em;
+    margin-top: 50px;
+}
+#table-button {
+    font-family: ProductSans-Medium;
+    margin-top: 25px;
+    border: 0;
+}
+#table-button button {
+    font-size: 2em;
+}
+#table-button button:hover {
+    color: #007C92;
+}
+#vendi > .card {
+    border: 0;
+    border-radius: 25px;
+}
+#rajoni > .card {
+    border: 0;
+    border-radius: 25px;
+}
+#bota > .card {
+    border: 0;
+    border-radius: 25px;
+}
+table {
+    font-family: ProductSans-Medium;
+    width: 100%;
+    border: 4px solid gray;
+}
+#tabela th, td {
+    padding: 10px;
+    text-align: center;
+}
+#tabela tr:nth-child(even) {
+    background-color: rgb(243, 243, 243);
+}
+thead th {
+    width: 25%;
+    background-color: lightgray;
+}
+tbody img {
+    width: 20%;
+}
+@media screen and (max-width: 992px) {
+    tbody img {
+        width: 40%;
+    }
+}
+
+
+/* Conferences */
+.conference-contents {
+    background: url(img/conference-pic.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    margin-top: 100px;
+    color: white;
+}
+.conference-contents h1 {
+    font-family: ProductSans-Bold;
+    font-size: 5em;
+    padding-top: 100px;
+}
+.conference-contents p {
+    font-family: ProductSans-Medium;
+    width: 600px;
+    margin-top: 25px;
+    font-size: 1.1em;
+}
+#conference-hashtag {
+    font-size: 1.5em;
+}
+.conference-contents i {
+    color: white; 
+    font-size: 5em;
+    margin-top: 50px;
+    margin-left: 25px;
+}
+.conference-contents i:hover {
+    color: rgb(209, 209, 209);
+}
+@media screen and (max-width: 600px) {
+    .conference-contents h1 {
+        padding-top: 50px;
+    }
+}
+@media screen and (max-width: 992px) {
+    .conference-contents h1 {
+        padding-top: 50px;
+    }
+    .conference-contents p {
+        width: 400px;
+    }
+}
+
+
+/* Products */
+#product-header {
+    margin-top: 100px;
+}
+#product-title {
+    font-family: ProductSans-Bold;
+    font-size: 4em;
+}
+#produkte-kirurgjikale {
+    background: url(img/kirurgjikale-pic.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    color: black;
+    font-family: ProductSans-Medium;
+    border: 0;
+    box-shadow: 0px 0px 15px 0px #838383;
+}
+#produkte-kirurgjikale a {
+    font-size: 4em;
+    color: black;
+}
+#produkte-kirurgjikale a:hover {
+    color: rgb(51, 51, 51);
+}
+#produkte-tepunes {
+    background: url(img/tepunes-pic.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    height: 400px;
+    color: black;
+    font-family: ProductSans-Medium;
+    border: 0;
+    box-shadow: 0px 0px 15px 0px #838383;
+}
+#produkte-tepunes a {
+    font-size: 4em;
+    color: black;
+}
+#produkte-tepunes a:hover {
+    color: rgb(51, 51, 51);
+}
+#produkte-imazherike {
+    background: url(img/imazherike-pic.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    height: 400px;
+    color: black;
+    font-family: ProductSans-Medium;
+    border: 0;
+    box-shadow: 0px 0px 15px 0px #838383;
+}
+#produkte-imazherike a {
+    font-size: 4em;
+    color: black;
+}
+#produkte-imazherike a:hover {
+    color: rgb(51, 51, 51);
+}
+#produkte-monitoruese {
+    background: url(img/monitoruese-pic.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    height: 400px;
+    color: black;
+    font-family: ProductSans-Medium;
+    border: 0;
+    box-shadow: 0px 0px 15px 0px #838383;
+}
+#produkte-monitoruese a {
+    font-size: 4em;
+    color: black;
+}
+#produkte-monitoruese a:hover {
+    color: rgb(51, 51, 51);
+}
+
+
+/* 3K App */
+.device-app {
+    background: url(img/app-coverpic.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    margin-top: 150px;
+    color: white;
+}
+.device-app h1 {
+    font-family: ProductSans-Bold;
+    font-size: 5em;
+    padding-top: 250px;
+    color: black;
+}
+.device-app p {
+    font-family: ProductSans-Medium;
+    margin-top: 25px;
+    font-size: 1.1em;
+    color: black;
+}
+.device-app img {
+    width: 200px;
+    margin-top: 25px;
+}
+@media screen and (max-width: 600px) {
+    .device-app h1 {
+        padding-top: 300px;
+    }
+    #container-app {
+        padding-left: 40px;
+    }
+}
+@media screen and (max-width: 992px) {
+    .device-app h1 {
+        padding-top: 220px; 
+    }
+    .device-app p {
+        width: 400px;
+    }
+}
+
+
+/* Contact */
+#contact-row {
+    margin-top: 100px; 
+}
+#map-title {
+    font-family: ProductSans-Bold;
+    font-size: 4em;
+}
+#map-title a {
+    color: #007C92; 
+}
+#map-title a:hover {
+    color: #0392ac; 
+}
+#map {
+    width: 100%;
+    height: 500px;
+    border-radius: 25px;
+    box-shadow: 0px 0px 15px 0px #838383;
+}
+
+#contact-row {
+    font-family: ProductSans-Medium; 
+    
+}
+#row-icon {
+    font-size: 2em;
+    color: #007C92;
+    width: max-content;
+}
+#row-text {
+    width: max-content;
+}
+
+
+/* Subscribe */
+#abonohu-title {
+    margin-top: 100px;
+}
+#abonohu-pretitle {
+    font-family: ProductSans-Bold;
+    font-size: 4em;  
+}
+#abonohu-content {
+    margin-bottom: 200px;
+}
+#mail-pic {
+    text-align: center;
+}
+#mail-pic img {
+    width: 100%;
+}
+#mail-text {
+    font-family: ProductSans-Medium;
+    text-align: center;
+}
+#abonohu-email input {
+    width: 70%;
+    height: 40px;  
+    border: 0;
+    border-bottom: 1px solid rgba(0,0,0,.5);
+    outline: none;
+}
+.btn-abonohu {
+    font-family: ProductSans-Medium;
+    width: 30%;
+    border-radius: 25px;
+    background-color: #007C92;
+    color: white;
+
+}
+.btn-abonohu:hover {
+    background-color: #0392ac;
+    color: white;
+}
+@media screen and (max-width: 992px) {
+    #mail-pic img {
+        margin-top: 60px;
+    }
+}
+
+
+
+/* Footer */
+#footer {
+    font-family: ProductSans-Medium;
+    background: url(img/footer-pic.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    padding: 30px 0;
+} 
+#footer h3 {
+    font-family: ProductSans-Medium;
+    font-size: 50px;
+    font-weight: 700;
+    color: #fff;
+    position: relative;
+    font-family: "Poppins", sans-serif;
+    padding: 0;
+    margin: 0 0 15px 0;
+} 
+#footer p {
+    font-size: 20px;
+    padding: 0;
+    margin: 0 0 40px 0;
+}
+#footer .social-links {
+    margin: 0 0 40px 0;
+} 
+#footer .social-links a {
+    font-size: 15px;
+    display: inline-block;
+    background: #007C92;
+    color: #fff;
+    padding: 8px 0;
+    margin-right: 5px;
+    border-radius: 50%;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    transition: 0.3s;
+}
+#col-contents a {
+    color: white;
+}
+#col-contents a:hover {
+    color: rgb(209, 209, 209);
+    text-decoration: none;
+}
+#col-contents h5 {
+    font-size: 25px;
+}
+.social-links i {
+    font-size: 25px;
+}
+#footer .social-links a:hover {
+    background: #0392ac;
+    color: #fff;
+    text-decoration: none;
+}  
+#footer .copyright {
+    margin: 0 0 5px 0;
+}
+#footer-copyright {
+    font-size: 1.1em;
+}

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regjistrohu</title>
+    <link rel="icon" type="image/png" href="../img/icon.png">
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
+
+    <style>
+        @charset "utf-8";
+
+        @font-face {
+            font-family: ProductSans-Bold;
+            src: url("../fonts/ProductSans-Bold.ttf");
+        }
+
+        @font-face {
+            font-family: ProductSans-Medium;
+            src: url("../fonts/ProductSans-Medium.ttf");
+        }
+
+
+        .container {
+            border-radius: 25px;
+            box-shadow: 0px 0px 15px 0px #838383;
+            width: 550px;
+            margin-top: 50px;
+            margin-bottom: 75px;
+            font-family: ProductSans-Medium;
+        }
+
+        form {
+            font-size: 1.3em;
+        }
+
+        .form-group input {
+            border: 0;
+            border-bottom: 1px solid rgba(0, 0, 0, .5);
+            border-radius: 0;
+        }
+
+        textarea:hover,
+        input:hover,
+        textarea:active,
+        input:active,
+        textarea:focus,
+        input:focus,
+        button:focus,
+        button:active,
+        button:hover,
+        label:focus,
+        .btn:active,
+        .btn.active {
+            outline: 0px !important;
+            -webkit-appearance: none;
+            box-shadow: none !important;
+        }
+
+
+        .btn {
+            width: 100%;
+            border-radius: 25px;
+            background-color: #007C92;
+            color: white;
+        }
+
+        .btn:hover {
+            background-color: #0392ac;
+            color: white;
+        }
+
+
+        @media screen and (max-width: 600px) {
+            .container {
+                width: 450px;
+            }
+        }
+
+        .kycu-llogaria {
+            font-size: 18px;
+        }
+
+        .kycu-llogaria span {
+            color: #007C92;
+        }
+
+        .kycu-llogaria span:hover {
+            color: #0392ac;
+        }
+
+        .kycu-llogaria a {
+            text-decoration: none;
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="col-12">
+            <div class="text-center p-3" id="logo">
+                <img src="../img/logo.png" class="img-fluid" alt="">
+            </div>
+
+            <form class="p-5">
+                <div class="form-group">
+                    <label for="emri">Emri</label>
+                    <input type="text" class="form-control" placeholder="Shkruani emrin" minlength="3" maxlength="15"
+                        id="emri">
+                </div>
+                <div class="form-group">
+                    <label for="mbiemri" class="mt-2">Mbiemri</label>
+                    <input type="text" class="form-control" placeholder="Shkruani mbiemrin" minlength="4" maxlength="20"
+                        id="mbiemri">
+                </div>
+
+                <div class="form-group">
+                    <label for="date" class="mt-2">Datëlindja</label>
+                    <input type="date" class="form-control" id="date">
+                </div>
+
+                <div class="form-group">
+                    <label for="gjinia">Gjinia</label>
+                    <select id="gjinia" class="form-control">
+                        <option selected>...</option>
+                        <option>Femër</option>
+                        <option>Mashkull</option>
+                        <option>Tjetër</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="qyteti">Qyteti</label>
+                    <select id="qyteti" class="form-control">
+                        <option selected>...</option>
+                        <option>Mitrovicë</option>
+                        <option>Prishtinë</option>
+                        <option>Gjilan</option>
+                        <option>Ferizaj</option>
+                        <option>Prizren</option>
+                        <option>Gjakovë</option>
+                        <option>Pejë</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="emaili" class="mt-2">Emaili</label>
+                    <input type="email" class="form-control" placeholder="Shkruani emailin" minlength="20"
+                        maxlength="40" id="emaili">
+                </div>
+
+                <div class="form-group">
+                    <label for="perdoruesi" class="mt-2">Përdoruesi</label>
+                    <input type="text" class="form-control" placeholder="Shkruani përdoruesin" minlength="6"
+                        maxlength="20" id="perdoruesi">
+                </div>
+
+                <div class="form-group">
+                    <label for="fjalekalimi" class="mt-2">Fjalëkalimi</label>
+                    <input type="password" class="form-control" placeholder="Shkruani fjalëkalimin" minlength="8"
+                        maxlength="50" id="fjalekalimi">
+                </div>
+
+                <div class="form-group">
+                    <label for="fjalekalimi" class="mt-2">Rishkruani fjalëkalimin</label>
+                    <input type="password" class="form-control" placeholder="Rishkruani fjalëkalimin" minlength="8"
+                        maxlength="25" id="fjalekalimi">
+                </div>
+
+
+
+
+                <button type="submit" class="btn mt-5">Regjistrohu</button>
+
+                <p class="kycu-llogaria mt-5 text-center">Keni llogari? Kyçu <a href="login.html"><span>këtu</span></a>.
+                </p>
+            </form>
+        </div>
+
+    </div>
+
+
+
+    <script src="bootstrap/js/jquery-3.5.1.min.js"></script>
+    <script src="bootstrap/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>
