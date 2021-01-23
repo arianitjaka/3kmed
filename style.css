@@ -9,12 +9,12 @@
     src: url("fonts/ProductSans-Medium.ttf");
 }
 
-#container2 {
+/* #container2 {
     width: 1400px;
     margin: auto;
     margin-top: 100px;
     border: 1px solid red;
-}
+} */
 
 
 /* Alert */
@@ -87,7 +87,7 @@
 }
 @media screen and (max-width: 600px) {
     .jumbotron h2 {
-        font-size: 75px;
+        /* font-size: 40px; */
         margin-top: 10px;
     }
 }
@@ -235,6 +235,12 @@ tbody img {
 @media screen and (max-width: 600px) {
     .conference-contents h1 {
         padding-top: 50px;
+        /* word-break: break-all; */
+        font-size: 50px;
+    }
+    .conference-contents p {
+        width: auto;
+        /* word-break: break-all; */
     }
 }
 @media screen and (max-width: 992px) {
@@ -242,7 +248,7 @@ tbody img {
         padding-top: 50px;
     }
     .conference-contents p {
-        width: 400px;
+        width: 100%;
     }
 }
 
@@ -351,19 +357,19 @@ tbody img {
     margin-top: 25px;
 }
 @media screen and (max-width: 600px) {
-    .device-app h1 {
-        padding-top: 300px;
-    }
+    /* .device-app h1 {
+        padding-top: -250px;
+    } */
     #container-app {
         padding-left: 40px;
     }
 }
 @media screen and (max-width: 992px) {
-    .device-app h1 {
-        padding-top: 220px; 
-    }
+    /* .device-app h1 {
+        padding-top: -400px; 
+    } */
     .device-app p {
-        width: 400px;
+        width: auto;
     }
 }
 
